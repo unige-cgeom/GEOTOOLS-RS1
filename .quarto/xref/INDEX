@@ -1,0 +1,35 @@
+{
+  "course/session4.qmd": {
+    "session4.html": "3a26f991"
+  },
+  "course/session3.qmd": {
+    "session3.html": "384fe0cb"
+  },
+  "course/session2.qmd": {
+    "session2.html": "5a786451"
+  },
+  "course/session1.qmd": {
+    "session1.html": "d68d0af8"
+  },
+  "course/installation.qmd": {
+    "installation.html": "107fc88c"
+  },
+  "resources/links.qmd": {
+    "links.html": "795c6927"
+  },
+  "index.qmd": {
+    "index.html": "27f34078"
+  },
+  "info/use_of_AI_declaration.qmd": {
+    "use_of_AI_declaration.html": "cb8dc7f5",
+    "use_of_AI_declaration.tex": "3faf68df"
+  },
+  "info/license.qmd": {
+    "license.html": "7056d4ab",
+    "license.tex": "ca8070ba"
+  },
+  "report/report.qmd": {
+    "report.html": "36d1250f",
+    "report.docx": "9b33150b"
+  }
+}
