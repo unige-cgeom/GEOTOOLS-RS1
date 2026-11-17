@@ -1,64 +1,62 @@
-
 name: Publish Quarto Website
-
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-
+push:
+branches: [main]
+workflow_dispatch:
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
+contents: read
+pages: write
+id-token: write
 concurrency:
-  group: pages
-  cancel-in-progress: true
-
+group: pages
+cancel-in-progress: true
 jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      # 1. Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # 2. Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      # 3. Install Python dependencies
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      # 4. Install Quarto
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      # 5. Render Quarto website
-      - name: Render website
-        run: quarto render
-
-      # 6. Configure GitHub Pages
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      # 7. Upload rendered website
-      - name: Upload website artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      # 8. Deploy website
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+build-deploy:
+runs-on: ubuntu-latest
+environment:
+name: github-pages
+url: ${{ steps.deployment.outputs.page_url }}
+steps:
+# 1. Checkout repository
+name: Checkout repository
+uses: actions/checkout@v4
+# 2. Set up Python
+name: Set up Python
+uses: actions/setup-python@v5
+with:
+python-version: '3.11'
+cache: 'pip'
+# 3. Install Python dependencies
+name: Install Python dependencies
+run: |
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+# 4. Cache TinyTeX (speeds up later runs)
+name: Cache TinyTeX
+uses: actions/cache@v4
+with:
+path: ~/.TinyTeX
+key: tinytex-${{ runner.os }}-v1
+# 5. Install Quarto + TinyTeX (needed for PDF / lualatex)
+name: Set up Quarto
+uses: quarto-dev/quarto-actions/setup@v2
+with:
+tinytex: true
+# 6. Sanity check: shows whether LaTeX and Python/Jupyter are detected
+name: Check Quarto installation
+run: quarto check
+# 7. Render Quarto website
+name: Render website
+run: quarto render
+# 8. Configure GitHub Pages
+name: Configure GitHub Pages
+uses: actions/configure-pages@v5
+# 9. Upload rendered website
+name: Upload website artifact
+uses: actions/upload-pages-artifact@v3
+with:
+path: _site
+# 10. Deploy website
+name: Deploy to GitHub Pages
+id: deployment
+uses: actions/deploy-pages@v4
