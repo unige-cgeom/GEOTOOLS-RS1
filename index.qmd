@@ -1,0 +1,101 @@
+---
+title: "GEOTOOLS-RS1"
+subtitle: "Introduction to Remote Sensing"
+date: last-modified
+format:
+  html:
+    toc: tru
+    toc-depth: 4
+
+author: 
+  - name: "Grégory Giuliani"
+    orcid: 0000-0002-1825-8865
+    affiliation:
+      - name: "Institute for Environmental Sciences, University of Geneva"
+        city: "Geneva"
+---
+
+## Welcome to the GEOTOOLS-RS2 Course!
+
+Briefly describe what the course is about.
+
+## Learning Objective
+
+Define what students will gain by following this course
+
+## Course Structure
+
+::: {.callout-note icon=false}
+### Monday March 23 - Rue des Maraîchers Building - Room 102 (morning) & 605 (afternoon)
+**09:00 - 09:15** Intro to SPACE-GEOLOGY
+
+**09:15 - 10:00** Lecture: GIS & Remote Sensing in Earth Sciences (G. Giuliani)
+
+**10:00 - 12:30** Python Environment Setup
+
+**12:30 - 13:30** Lunch
+
+**13:30 - 17:00** Exercise 1.1: Reconstructing Earth’s Past – From a Snapshot to Deep Time
+:::
+
+::: {.callout-note icon=false}
+### Tuesday March 24 - Rue des Maraîchers Building - Room 605 (all day)
+**09:00 - 09:30** Feedback from Day 1
+
+**09:30 - 10:30** Lecture: Reconstructing the Earth in Deep-time using Plate Tectonic Models (C. Vérard)
+
+**10:30 - 12:30** Exercise 1.2: How Fast Was Earth’s Engine Running?
+
+**12:30 - 13:30** Lunch
+
+**13:30 - 17:00** Exercise 1.2 (continued)
+:::
+
+::: {.callout-note icon=false}
+### Wednesday March 25 - Rue des Maraîchers Building - Room 606 (all day)
+**9:15 - 9:30** Feedback from Day 1
+
+**9:30 - 10:30** Palaeoclimate Modelling: the Role of Palaeogeography (N. Werner)
+
+**10:30 - 12:30** Exercise 1.3: Palaeogeography Meets Palaeoclimatology
+
+**12:30 - 13:30** Lunch
+
+**13:30 - 17:00** Exercise 1.3 (continued)
+:::
+
+::: {.callout-note icon=false}
+### Thursday March 26 - Rue des Maraîchers Building - Room 201 (all day)
+**9:00 - 10:00** Introduction to GIS for Landslide Susceptibility Assessement (S. Biass)
+
+**10:00 - 12:30** Exercise 2: Landslide Susceptibility Assessment
+
+**12:30 - 13:30** Lunch
+
+**13:30 - 17:00** Exercise 2 (continued)
+:::
+
+::: {.callout-note icon=false}
+### Friday March 27 - Rue des Maraîchers Building - Room 102 (all day)
+**9:00 - 12:30** Exercise 2 (continued)
+
+**12:30 - 13:30** Lunch
+
+**13:30 - 17:00** Wrap-up & Report Writing
+:::
+
+## Beginning with the Google Earth Engine
+
+In this course, we will use the Google Earth Engine (GEE) platform to access and analyze geospatial data. GEE is a powerful cloud-based platform that allows users to process and analyze large geospatial datasets without the need for local storage or computational resources. It provides access to a vast collection of satellite imagery and geospatial datasets, as well as a suite of tools for data analysis and visualization.
+
+- Sign-up for Google Earth Engine: [https://courses.spatialthoughts.com/gee-sign-up.html](https://courses.spatialthoughts.com/gee-sign-up.html)
+- Beginner's Cookbook: [https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+- Introduction to JavaScript for Earth Engine: [https://developers.google.com/earth-engine/tutorials/tutorial_js_01](https://developers.google.com/earth-engine/tutorials/tutorial_js_01)
+- An intro to the Earth Engine Python API: [https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api](https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api)
+- geemap: [https://geemap.org](https://geemap.org)
+
+## More information
+ 
+GEOTOOLS-RS2 is a 3 ECTS course given by the University of Geneva, as part of the [Complementary Certificate of Geomatics](https://www.unige.ch/cgeom/), the [Master in Environmental Sciences](https://www.unige.ch/muse/en), and the [Master in Earth Sciences](https://www.unige.ch/sciences/en/enseignements/formations/masters/earth). 
+
+For questions, please write to [gregory.giuliani@unige.ch](mailto:gregory.giuliani@unige.ch)

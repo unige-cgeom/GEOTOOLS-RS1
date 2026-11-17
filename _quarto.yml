@@ -1,0 +1,43 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "GEOTOOLS-RS1"
+  page-footer:
+    background: "#2c3e50"
+    left:
+      - text: "Edited by Grégory Giuliani"
+    center:
+      - text: "More Information"
+        href: info/license.qmd
+    right:
+      - text: "This course was built using Quarto"
+        href: https://quarto.org/
+      - icon: github
+        href: https://github.com/unige-cgeom/GEOTOOLS-RS2
+  navbar:
+    background: "#2c3e50"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Course"
+        href: course/session1.qmd
+      - text: "Report Template"
+        href: report/report.qmd
+      - text: "Useful resources"
+        href: resources/links.qmd
+  sidebar:
+    - title: "Course Chapters"
+      contents:
+        - course/installation.qmd
+        - course/session1.qmd
+        - course/session2.qmd
+        - course/session3.qmd
+        - course/session4.qmd
+    - title: "More Information"
+      contents:
+        - info/license.qmd
+        - info/use_of_AI_declaration.qmd

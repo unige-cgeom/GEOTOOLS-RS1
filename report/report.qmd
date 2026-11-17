@@ -1,0 +1,48 @@
+---
+title: "GEOTOOLS-RS2"
+subtitle: "Report"
+format:
+  html: default
+  docx:
+    toc: true
+    number-sections: true
+    highlight-style: github
+---
+
+## Introduction
+
+Explain here....
+
+## Methodology
+
+What tools and libraries did you use ? To what purpose ?
+
+## Results
+
+Breakdown your results (screenshots and code you modified or added) for the exercises's three parts.
+
+
+## Discussion
+
+Refer to the "Points for Discussion" in each part of the exercise I. You may answer with text ( a few paragraphs) and/or
+by adding references to scientific articles from the literature.
+
+### Benefits
+
+XXX
+
+### Limitations
+
+XXX
+
+### Perspectives
+
+## Conclusion
+
+Did this course provide a satisfactory introduction to geospatial analysis with Python applied to geology ?
+
+Did you have any experience coding with Python before ?
+
+Are you likely to continue working with Python in the future ? If yes, why ? I no, why not ?
+
+Suggest improvements to this course.
